@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Login</title>
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <main class="login-container">
+
+    <section class="login-card">
+
+      <div class="logo">L</div>
+
+      <h1>Bem-vindo</h1>
+      <p class="subtitle">
+        Entre com seus dados para acessar sua conta.
+      </p>
+
+      <form id="loginForm">
+
+        <div class="campo">
+          <label for="email">E-mail</label>
+
+          <input
+            type="email"
+            id="email"
+            placeholder="usuario@teste.com"
+            autocomplete="email"
+            required
+          >
+        </div>
+
+        <div class="campo">
+          <label for="senha">Senha</label>
+
+          <div class="senha-container">
+            <input
+              type="password"
+              id="senha"
+              placeholder="Digite sua senha"
+              autocomplete="current-password"
+              required
+            >
+
+            <button
+              type="button"
+              id="mostrarSenha"
+              class="mostrar-senha"
+              aria-label="Mostrar senha"
+            >
+              Mostrar
+            </button>
+          </div>
+        </div>
+
+        <button type="submit" class="botao-entrar">
+          Entrar
+        </button>
+
+        <p
+          id="mensagem"
+          class="mensagem"
+          role="status"
+          aria-live="polite"
+        ></p>
+
+      </form>
+
+    </section>
+
+  </main>
+
+  <script src="login.js"></script>
+
+</body>
+</html>
