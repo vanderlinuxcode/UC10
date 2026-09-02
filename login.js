@@ -1,6 +1,6 @@
 function login(email, senha) {
   const emailCorreto = "usuario@teste1.com";
-  const senhaCorreta = "123456";
+  const senhaCorreta = "123453";
 
   return email === emailCorreto && senha === senhaCorreta;
 }
