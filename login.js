@@ -5,6 +5,10 @@ function login(email, senha) {
   return email === emailCorreto && senha === senhaCorreta;
 }
 
+module.exports = { login };
+
+if (typeof document !== "undefined") {
+
 
 // Elementos da tela
 const formulario = document.getElementById("loginForm");
@@ -13,6 +17,7 @@ const senhaInput = document.getElementById("senha");
 const mensagem = document.getElementById("mensagem");
 const botaoMostrarSenha = document.getElementById("mostrarSenha");
 
+if (formulario && emailInput && senhaInput && mensagem && botaoMostrarSenha) {
 
 // Envio do formulário
 formulario.addEventListener("submit", function (event) {
@@ -48,3 +53,5 @@ botaoMostrarSenha.addEventListener("click", function () {
   }
 
 });
+}
+}

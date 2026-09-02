@@ -1,4 +1,4 @@
-const login = require("./login");
+const { login } = require("./login.js");
 
 describe ("Teste da função de login", () => {
     test("deve permitir login com credenciais corretas", () => {
